@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian # Since resin is providing some useful arm arch images
+FROM resin/rpi-raspbian
 
 # add our user and group first to make sure their IDs get assigned consistently, regardless of whatever dependencies get added
 RUN groupadd -r mongodb && useradd -r -g mongodb mongodb
