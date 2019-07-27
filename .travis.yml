@@ -8,7 +8,7 @@ script:
 # build image
 - docker build -t mongo-for-rpi/rpi-mongo .
 # test image
-- docker run mongo-for-rpi/rpi-mongo mysql --version
+- docker run mongo-for-rpi/rpi-mongo mongo --version
 # push image
 - >
   if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
